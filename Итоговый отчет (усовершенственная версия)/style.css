@@ -1,0 +1,598 @@
+body {
+    background-color: rgb(242, 244, 246);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* Для всплывающий кнопки */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-image: url("/img/Up3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.scroll-to-top.active {
+    display: block;
+}
+
+
+
+p,
+h2,
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: #838181;
+    margin-top: 8px;
+}
+
+.wrapper {
+    max-width: 860px;
+    margin: 0 22px;
+}
+
+/* Стили для верхнього меню */
+
+@media screen and (max-width: 600px) {
+    .UpBar_menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .UpBar_menu {
+        height: 96px;
+        margin: 24px 6px;
+        background-color: #fff;
+        border-radius: 24px;
+        position: relative;
+    }
+}
+
+.My_logo1 {
+    position: absolute;
+    width: 98px;
+    height: 86px;
+    left: 21px;
+    top: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .Hello_text_on_mobile {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 599px) {
+    .Hello_text_on_mobile {
+        margin: 0 auto;
+        text-align: center;
+        color: #838181;
+    }
+
+}
+
+@media screen and (max-width: 601px) {
+    .head_text_hello {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .hello_container,
+    .analitik_container,
+    .cotumers_container_text {
+        flex-direction: column;
+        display: flex;
+        background-color: #fff;
+        margin: 24px 6px;
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 22px 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        color: #838181;
+    }
+}
+
+
+
+@media screen and (min-width: 601px) {
+
+    .hello_container,
+    .analitik_container,
+    .cotumers_container_text {
+        flex-direction: column;
+        display: flex;
+        background-color: #fff;
+        margin: 24px 6px;
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 22px 92px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #838181;
+        float: right;
+    }
+}
+
+
+
+/* Стили для контейнера с дииграммой*/
+
+/* Стили с дииграммой*/
+@media screen and (max-width: 600px) {
+    .first_diagrame {
+        width: 162px;
+        height: 222px;
+        margin-left: 12px;
+        align-items: center;
+        margin-left: 56px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .first_diagrame {
+        width: 215.24px;
+        height: 322.76px;
+        margin-left: 32px;
+        align-items: center;
+        float: right;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container_content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .container_content {
+        display: flex;
+    }
+}
+
+/*Стили для диаграм по ТП*/
+
+
+@media screen and (max-width: 600px) {
+
+    .diagrame_byTP_container,
+    .costumer_coast_container {
+        display: flex;
+        flex-direction: column;
+        margin: 24px 6px;
+        color: #838181;
+    }
+
+    .diagrame_tpOdessa,
+    .old_costumers_container {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+
+    .diagrame_byTP_container,
+    .costumer_coast_container {
+        display: flex;
+        flex-direction: row;
+        margin: 12px 6px;
+        color: #838181;
+    }
+
+    .diagrame_tpOdessa,
+    .old_costumers_container {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+.diagrame_tpKiev,
+.diagrame_tpOdessa,
+.diagrame_tpWest,
+.new_costumers_container,
+.old_costumers_container,
+.all_costumers_container {
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 22px;
+    text-align: center;
+}
+
+.diagrame_TP,
+.max_pay_diagrame,
+.simple_diagrame {
+    width: 100%;
+    margin: 8px;
+}
+
+/* Контейнер с макисмальными оплатами*/
+
+
+@media screen and (max-width: 600px) {
+    .container_max_pay_main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .container_max_pay_main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container_max_pay_diagrame {
+        width: 170%;
+    }
+}
+
+.container_max_pay_diagrame,
+.container_max_pay_text {
+    background-color: #fff;
+    border-radius: 24px;
+    margin: 12px 6px;
+    padding: 22px;
+}
+
+
+/*Контейнер с отгрузками*/
+
+@media screen and (max-width: 600px) {
+    .shimpment_simple_diagrame {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .shimpment {
+        display: flex;
+        margin: 12px;
+    }
+
+    .sh_text_diagrame {
+        width: 40%;
+        margin-right: 12px;
+    }
+
+    .shimpment_circle_diagrame {
+        width: 60%;
+        display: flex;
+    }
+
+    .shimpment_text {
+        padding: 8px;
+        margin-bottom: 12px;
+    }
+
+}
+
+.shimpment_text,
+.shimpment_circle_diagrame,
+.shimpment_simple_diagrame {
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 12px;
+}
+
+.shimpment_circle_diagrame {
+    justify-content: center;
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .circle_diagrame {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .circle_diagrame {
+        width: 80%;
+        height: auto;
+    }
+}
+
+/* Для контейнера с покупателями и цифрами*/
+
+@media screen and (max-width: 600px) {
+    .circle_diagrame {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .new_costumers_container {
+        width: 30%;
+    }
+
+    .old_costumers_container {
+        width: 30%;
+    }
+
+    .all_costumers_container {
+        width: 30%;
+    }
+}
+
+
+.cost_discrp {
+    font-size: 12px;
+}
+
+.new_number {
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 157px;
+    margin-bottom: 0px;
+    color: #479FF8;
+    text-shadow: 0px 12px 4px rgba(71, 159, 248, 0.25);
+}
+
+
+
+.old_number {
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 157px;
+    color: #EFBD40;
+    text-shadow: 0px 12px 4px rgba(239, 189, 64, 0.25);
+    margin-bottom: 0;
+}
+
+.all_number {
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 157px;
+    color: #81D653;
+    margin-bottom: 0;
+    opacity: 0.94;
+    text-shadow: 0px 12px 4px rgba(129, 214, 83, 0.25);
+}
+
+@media screen and (max-width: 600px) {
+    .orders {
+        display: none;
+    }
+
+    .orders_mobile {
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 22px;
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .order_number {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 184px;
+        color: #E75656;
+        text-shadow: 0px 12px 4px rgba(231, 86, 86, 0.25);
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .orders_mobile {
+        display: none;
+    }
+
+    .orders {
+        display: flex;
+    }
+
+    .orders_count_conteiner,
+    .orders_text {
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 22px;
+
+    }
+
+    .orders_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .orders_count_conteiner {
+        margin-right: 12px;
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+    .order_number {
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 184px;
+        color: #E75656;
+        text-shadow: 0px 12px 4px rgba(231, 86, 86, 0.25);
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
+
+/*Для контейнера Деньги*/
+
+@media screen and (max-width: 600px) {
+    .Money {
+        display: none;
+    }
+
+    .money_mobile {
+        margin-top: 12px;
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 22px;
+        font-size: 12px;
+    }
+
+    .money_number {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 184px;
+        color: #81D653;
+        text-shadow: 0px 12px 4px rgba(129, 214, 83, 0.25);
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .money_count_conteiner_discrip {
+        float: right;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .money_mobile {
+        display: none;
+    }
+
+    .Money {
+        display: flex;
+        margin-top: 12px;
+    }
+
+    .money_count_conteiner,
+    .money_text {
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 22px;
+
+    }
+
+
+    .money_count_conteiner {
+        margin-left: 12px;
+        text-align: center;
+    }
+
+    .money_number {
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 184px;
+        color: #81D653;
+        text-shadow: 0px 12px 4px rgba(129, 214, 83, 0.25);
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .money_count_conteiner_discrip {
+        float: right;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .letter {
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 22px;
+        margin-top: 12px;
+    }
+
+
+    .text_letter {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.06em;
+        color: #838181;
+        margin: 56px 12px;
+    }
+
+    .aftograf {
+        float: right;
+        display: flex;
+    }
+
+    .logo {
+        width: 24px;
+        height: 21px;
+        padding-bottom: 12px;
+    }
+
+    .text_aftograf {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .letter {
+        background-color: #fff;
+        border-radius: 24px;
+        padding: 22px;
+        margin-top: 12px;
+    }
+
+
+    .text_letter {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        color: #838181;
+        margin: 56px 100px;
+    }
+
+    .aftograf {
+        float: right;
+        display: flex;
+    }
+
+    .logo {
+        width: 24px;
+        height: 21px;
+        padding-bottom: 12px;
+    }
+
+    .text_aftograf {
+        margin-top: 0px;
+    }
+}
+
+
+
+
+.bemi_container {
+    margin-top: 12px;
+    background-color: #fff;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.bembi_logo {
+    width: 50%;
+    margin: 22px;
+}
+
+.copy_richts {
+    color: #838181;
+    font-size: 10px;
+}
